@@ -4,8 +4,9 @@
         color: white;
         text-align: center;
         padding: 10px;
+        position: fixed;
         width: 100%;
-        height: 100px;
+        bottom: 0;
     }
 </style>
 <?php
