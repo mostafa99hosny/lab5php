@@ -8,11 +8,7 @@ class Config {
 
     public function __construct() {
         try {
-            $this->pdo = new PDO(
-                "mysql:host=$this->host;dbname=$this->dbname;charset=utf8",
-                $this->username,
-                $this->password
-            );
+            $this->pdo = new PDO(  "mysql:host=$this->host;dbname=$this->dbname;charset=utf8",$this->username,$this->password );
         } catch (PDOException $e) {
             die("Connection failed: " . $e->getMessage());
         }
